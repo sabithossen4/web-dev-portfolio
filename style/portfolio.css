@@ -3,10 +3,8 @@
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
+  font-style: normal; 
+ }
 nav{
   display: flex;
   align-items: center;
@@ -99,9 +97,10 @@ main{
   font-weight: 600;
 }
 .about-items{
-  display: flex;
+  display: flex;  
   justify-content: space-around ;
 }
+
 .text-center{
   text-align: center;
 }
@@ -157,4 +156,31 @@ footer input[type="text"], footer input[type="email"], footer textarea{
   width: 100%;
   padding: 10px 20px;
   porder:none;
+}
+
+.hide{
+  display: none;
+}
+
+@media screen and (max-width:576px){
+  .skills-container,
+   .resume-container,
+    footer,
+    .about-items{
+    flex-direction: column;
+    /* text-align: center; */
+  }
+  .about-item{
+    padding: 10px;
+  }
+  footer, .about{    
+    padding: 20px;    
+  }
+  .footer-column{
+    width: 100%;
+  }
+  footer input[type="text"], footer input[type="email"], footer textarea{
+    width: calc(100% - 40px);
+  }
+  
 }
