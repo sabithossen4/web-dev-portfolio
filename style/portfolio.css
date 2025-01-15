@@ -2,7 +2,7 @@
 .open-sans-normal {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal; 
  }
 nav{
@@ -155,7 +155,7 @@ footer input[type="text"], footer input[type="email"], footer textarea{
   background-color: antiquewhite;
   width: 100%;
   padding: 10px 20px;
-  porder:none;
+  border:none;
 }
 
 .hide{
@@ -166,12 +166,30 @@ footer input[type="text"], footer input[type="email"], footer textarea{
   .skills-container,
    .resume-container,
     footer,
+    .banner,
+    nav,
+    ul,
     .about-items{
     flex-direction: column;
-    /* text-align: center; */
+    
+  }
+  nav> ul{
+    gap: 10px;
   }
   .about-item{
-    padding: 10px;
+    padding: 20px;
+  }
+  .banner{
+    margin: 20px;
+  }
+  .banner-profile-pic{
+    width: 100%;
+  }
+  .btn-primary{
+    margin-bottom: 20px;
+  }
+  .header{
+    background-image: none;
   }
   footer, .about{    
     padding: 20px;    
@@ -179,7 +197,9 @@ footer input[type="text"], footer input[type="email"], footer textarea{
   .footer-column{
     width: 100%;
   }
-  footer input[type="text"], footer input[type="email"], footer textarea{
+  footer input[type="text"], footer input[type="email"],
+  .banner-profile-pic,
+   footer textarea{
     width: calc(100% - 40px);
   }
   
